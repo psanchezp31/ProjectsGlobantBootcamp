@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Survey Form</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="src/styles.css" type="text/css" />
+    </head>
+
+    <body>
+      <div id="content">
+        <h1 id="title">Code, Girl Code Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+
+        <form aria-label="survey form" id="survey-form">
+          <section class="form-group">
+            <label aria-labelledby="name" for="name" id="name-label"
+              >Full name</label
+            ><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+              class="form-control"
+            /><br />
+          </section>
+
+          <section class="form-group">
+            <label aria-labelledby="email" for="email" id="email-label"
+              >Email</label
+            ><br />
+            <input
+              type="email"
+              required
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="form-control"
+            /><br />
+          </section>
+
+          <section class="form-group">
+            <label aria-labelledby="age" for="age"
+              >Age<span class="optional"> (optional) </span></label
+            ><br />
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="16"
+              max="99"
+              maxlength="2"
+              placeholder="Age"
+              class="form-control"
+            /><br />
+          </section>
+
+          <section class="form-group">
+            <label aria-labelledby="phone" for="phone" id="number-label"
+              >Phone</label
+            ><br />
+            <input
+              type="number"
+              id="phone"
+              min="^\d{10}$"
+              max="^\d{13}$"
+              maxlength="13"
+              name="phone"
+              placeholder="Phone"
+              class="form-control"
+            /><br />
+          </section>
+
+          <section role="group" class="form-group">
+            <fieldset>
+              <legend>Would you recommend Code, Girl Code to a friend?</legend>
+              <label>
+                <input
+                  role="radio"
+                  aria-checked="true"
+                  name="user-recommend"
+                  value="absolutely"
+                  checked
+                  type="radio"
+                  class="input-radio"
+                />
+                Absolutely</label
+              >
+
+              <label>
+                <input
+                  role="radio"
+                  aria-checked="false"
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Maybe</label
+              >
+
+              <label
+                ><input
+                  role="radio"
+                  aria-checked="false"
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Not sure</label
+              >
+            </fieldset>
+          </section>
+
+          <section role="group" class="form-group">
+            <label aria-labelledby="dropdown" for="dropdown">
+              <h2>What is your favorite feature of Code, Girl Code?</h2></label
+            >
+            <select role="list" name="features" id="dropdown" class="dropdown">
+              <option disabled selected value>Select feature</option>
+              <option value="events">Events</option>
+              <option value="community">Community</option>
+              <option value="trainings">Trainings</option>
+              <option value="contact-with-companies"
+                >Contact with companies</option
+              >
+            </select>
+            <br /><br />
+          </section>
+
+          <section class="form-group">
+            <fieldset>
+              <legend>
+                What would you like to see improved in Code, Girl Code?
+                <span class="optional"> (Check all that apply) </span>
+              </legend>
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="social-media"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Social Media</label
+              >
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="communications"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Communications</label
+              >
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="follow-up-of-new-members"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Follow-up of new members</label
+              >
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="more-contacts-with-companies"
+                  type="checkbox"
+                  class="input-checkbox"
+                />More contacts with companies</label
+              >
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="make-more-meetings"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Make more meetings</label
+              >
+
+              <label
+                ><input
+                  role="checkbox"
+                  aria-checked="false"
+                  name="prefer"
+                  value="get-scheduled-events-per-months"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Get scheduled events per months</label
+              >
+            </fieldset>
+          </section>
+
+          <section class="form-group">
+            <label aria-labelledby="textarea" for="textarea">
+              <h2>Any comments and suggestions?</h2></label
+            >
+            <br />
+            <textarea
+              id="textarea"
+              name="comments"
+              placeholder="Enter your comments here..."
+              class="input-textarea"
+            ></textarea>
+            <br /><br />
+          </section>
+
+          <section class="form-group">
+            <button
+              aria-label="button"
+              type="submit"
+              id="submit"
+              name="submit-button"
+              class="submit-button"
+            >
+              Submit
+            </button>
+          </section>
+        </form>
+
+        <footer>
+          <div id="copyright">
+            &copy; 2021-Paula Sanchez | All rights reserved.
+          </div>
+        </footer>
+      </div>
+    </body>
+  </html>
+</html>

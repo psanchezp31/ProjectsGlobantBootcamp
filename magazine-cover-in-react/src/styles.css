@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #898980;
+}
+
+#cover-magazine-wrapper {
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 1064px;
+  width: 845px;
+}
+
+#cover-magazine {
+  background-image: url("images/elon_musk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  width: 805px;
+}
+
+#header-group {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Playfair Display SC", serif;
+}
+
+#header-ceo {
+  font-size: 150px;
+}
+
+#header-magazine {
+  margin-left: -80px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #e1e1e1;
+}
+
+#slogan {
+  font-size: 15px;
+  margin-top: -30px;
+  margin-left: 10px;
+  color: black;
+}
+
+.paragraphs-content-left {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Questrial", sans-serif;
+}
+
+.paragraphs-content-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  margin-top: 50px;
+  padding-right: 10px;
+}
+
+#issn {
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  text-align: center;
+  font-family: "Questrial", sans-serif;
+  padding-right: 10px;
+}
+
+#paragraph-inspire {
+  width: 70px;
+}
+
+#name-group {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#first-name {
+  font-weight: bold;
+  font-size: 80px;
+  align-items: flex-end;
+}
+
+#last-name {
+  font-weight: bold;
+  font-size: 150px;
+}
+
+#name-subtitle {
+  font-size: 30px;
+}
+
+/*
+* General classes
+*/
+
+.white-text {
+  color: white;
+}
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.black-background {
+  background-color: black;
+}
+
+p {
+  margin-bottom: 5px;
+}
